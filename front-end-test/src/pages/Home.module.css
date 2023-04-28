@@ -1,0 +1,146 @@
+@keyframes jello-horizontal {
+  0%,
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+}
+.homeChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1920px;
+  height: 1080px;
+}
+.buddy {
+  color: #e5593b;
+}
+.travelbuddy {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 308.5px);
+}
+.locationIcon,
+.websitetitle {
+  position: absolute;
+  top: 27px;
+  left: calc(50% - 428.5px);
+  width: 84.13px;
+  height: 117px;
+}
+.websitetitle {
+  top: 327px;
+  left: calc(50% - 429px);
+  width: 857px;
+  height: 160px;
+}
+.signInButtonChild {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 20px;
+  background-color: var(--color-lightseagreen);
+  width: 123px;
+  height: 47px;
+}
+.signUp {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 24px;
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: center;
+}
+.signInButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 16px;
+  right: 21px;
+  width: 123px;
+  height: 47px;
+  opacity: 1;
+}
+.signInButton.animate {
+  animation: 1s linear 0s 1 normal both jello-horizontal;
+}
+.anAutomaticTravel,
+.div {
+  position: absolute;
+  font-size: 36px;
+}
+.anAutomaticTravel {
+  top: 487px;
+  left: calc(50% - 337px);
+  color: #b0aaaa;
+}
+.div {
+  top: 4px;
+  left: 16px;
+  font-family: var(--font-inder);
+  color: var(--color-lightseagreen);
+  text-align: center;
+}
+.ellipseParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 53px;
+}
+.helpButton,
+.searchBarTotal {
+  border-radius: 50px;
+  border: 2px solid #BDBABA;
+  background-color: transparent;
+  position: absolute;
+}
+.helpButton {
+  cursor: pointer;
+  padding: 0;
+  top: 14px;
+  left: 16px;
+  width: 53px;
+  height: 53px;
+  opacity: 1;
+}
+.helpButton.animate {
+  animation: 1s linear 0s 1 normal forwards jello-horizontal;
+}
+.searchBarTotal {
+  font-family: var(--font-montserrat);
+  font-size: var(--font-size-17xl);
+  top: 565px;
+  left: calc(50% - 575px);
+  width: 1149px;
+  height: 89px;
+}
+.home {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 128px;
+  color: var(--color-lightseagreen);
+  font-family: var(--font-inder);
+}
