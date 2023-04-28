@@ -65,7 +65,7 @@
   font-size: 24px;
   font-family: var(--font-inder);
   color: var(--color-white);
-  text-align: left;
+  text-align: center;
 }
 .signInButton {
   cursor: pointer;
@@ -96,7 +96,7 @@
   top: 4px;
   left: 16px;
   font-family: var(--font-inder);
-  color: #4EAEAD;
+  color: var(--color-lightseagreen);
   text-align: center;
 }
 .ellipseParent {
@@ -108,7 +108,8 @@
 }
 .helpButton,
 .searchBarTotal {
-  border: 0;
+  border-radius: 50px;
+  border: 2px solid #BDBABA;
   background-color: transparent;
   position: absolute;
 }
