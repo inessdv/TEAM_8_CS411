@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Home.module.css";
 import '../global.css';
-
+// line 49 is the input field where the api call should be made
 const Home = () => {
   useEffect(() => {
     
