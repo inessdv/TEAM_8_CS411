@@ -1,34 +1,7 @@
 import { useEffect } from "react";
-import React, { useState } from "react";
 import styles from "./Home.module.css";
 import '../global.css';
 // line 49 is the input field where the api call should be made
-
-const mockData = [
-  {
-    id: 1,
-    city: "Rome",
-    country: "Italy",
-    lat: 41.9028,
-    lng: 12.4964,
-  },
-  {
-    id: 2,
-    city: "Madrid",
-    country: "Spain",
-    lat: 40.4168,
-    lng: -3.7038,
-  },
-  {
-    id: 3,
-    city: "Paris",
-    country: "France",
-    lat: 48.8566,
-    lng: 2.3522,
-  },
-];
-
-
 const Home = () => {
   useEffect(() => {
     
@@ -49,25 +22,6 @@ const Home = () => {
 
     
   }, []);
-
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
-
-  const handleSearch = (e) => {
-    const searchQuery = e.target.value;
-    setQuery(searchQuery);
-
-    if (searchQuery.length > 2) {
-      const searchResults = mockData.filter(
-        (data) =>
-          data.city.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          data.country.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      setResults(searchResults);
-    } else {
-      setResults([]);
-    }
-  };
 
   return (
     <div className={styles.home}>
@@ -97,18 +51,8 @@ const Home = () => {
           className={styles.searchBarTotal}
           type="text"
           placeholder="Rome, Italy"
-          onChange={handleSearch} 
-          value={query}
         />
-        {results.length > 0 && (
-          <ul>
-            {results.map((result) => (
-              <li key={result.id}>
-                {result.city}, {result.country}
-              </li>
-            ))}
-          </ul>
-        )}
+        
       </div>
     </div>
   );

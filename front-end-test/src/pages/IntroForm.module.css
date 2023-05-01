@@ -1,0 +1,286 @@
+.buddy {
+  color: var(--color-tomato);
+}
+.travelbuddy {
+  position: absolute;
+  top: 12px;
+  left: 778.71px;
+  font-size: 75.43px;
+  color: var(--color-lightseagreen);
+}
+.introFormChild,
+.locationIcon {
+  position: absolute;
+  top: 27.91px;
+  left: 708px;
+  width: 49.58px;
+  height: 68.94px;
+}
+.introFormChild {
+  top: 295px;
+  left: 134px;
+  width: 1497px;
+  height: 1038px;
+}
+.introFormItem,
+.searchBar {
+  position: absolute;
+  box-sizing: border-box;
+}
+.introFormItem {
+  top: 124px;
+  left: -1px;
+  border-top: 2px solid var(--color-gainsboro);
+  width: 1922px;
+  height: 2px;
+}
+.searchBar {
+  border: 1.8px solid var(--color-silver);
+  background-color: var(--color-white);
+  top: 404.77px;
+  left: 206px;
+  border-radius: 45.49px;
+  width: 1169.98px;
+  height: 66.41px;
+}
+.searchIcon {
+  position: absolute;
+  top: 415.68px;
+  left: 221.47px;
+  width: 50.34px;
+  height: 45.13px;
+}
+.searchTopAttractions {
+  position: absolute;
+  top: 420.23px;
+  left: 280.6px;
+  font-family: var(--font-montserrat);
+  color: var(--color-gainsboro);
+  display: inline-block;
+  width: 845.19px;
+  height: 32.75px;
+}
+.enterTripDetails {
+  position: absolute;
+  top: 141px;
+  left: 137px;
+  font-size: 96px;
+}
+.iconProfileCircle {
+  position: absolute;
+  height: 7.87%;
+  width: 4.38%;
+  top: 1.57%;
+  right: 1.61%;
+  bottom: 90.56%;
+  left: 94.01%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.whatDoYou {
+  top: 352px;
+  font-size: 36.39px;
+}
+.searchBar1,
+.startLocation,
+.whatDoYou {
+  position: absolute;
+  left: 215.1px;
+}
+.startLocation {
+  top: 667.7px;
+  font-size: 36.39px;
+  display: inline-block;
+  width: 1301.9px;
+  height: 85.52px;
+}
+.searchBar1 {
+  border: 1.8px solid var(--color-silver);
+  background-color: var(--color-white);
+  top: 715px;
+  border-radius: 45.49px;
+  box-sizing: border-box;
+  width: 1169.98px;
+  height: 66.41px;
+}
+.enterAnAddress {
+  position: absolute;
+  top: 732.29px;
+  left: 261.5px;
+  font-family: var(--font-montserrat);
+  color: var(--color-gainsboro);
+  display: inline-block;
+  width: 276.57px;
+  height: 32.75px;
+}
+.endLocation,
+.searchBar2 {
+  position: absolute;
+  left: 215.1px;
+}
+.endLocation {
+  top: 833.28px;
+  font-size: 36.39px;
+  display: inline-block;
+  width: 1301.9px;
+  height: 85.52px;
+}
+.searchBar2 {
+  border: 1.8px solid var(--color-silver);
+  background-color: var(--color-white);
+  top: 884.22px;
+  border-radius: 45.49px;
+  box-sizing: border-box;
+  width: 1169.98px;
+  height: 66.41px;
+}
+.enterAnAddress1 {
+  position: absolute;
+  top: 901.51px;
+  left: 261.5px;
+  font-family: var(--font-montserrat);
+  color: var(--color-gainsboro);
+  display: inline-block;
+  width: 276.57px;
+  height: 32.75px;
+}
+.introFormInner,
+.startAndEnd {
+  position: absolute;
+  height: 22.74px;
+}
+.introFormInner {
+  top: 787.79px;
+  left: 218.74px;
+  background-color: var(--color-white);
+  border: 0.9px solid var(--color-darkgray);
+  box-sizing: border-box;
+  width: 22.74px;
+}
+.startAndEnd {
+  top: 786.88px;
+  left: 254.22px;
+  font-size: 21.83px;
+  color: var(--color-darkgray);
+  display: inline-block;
+  width: 386.66px;
+}
+.destinationBlockChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 22.74px;
+  border: 1.8px solid var(--color-darkgray);
+  box-sizing: border-box;
+  width: 316.61px;
+  height: 134.65px;
+}
+.destinationBlockItem {
+  position: absolute;
+  top: 97.35px;
+  left: 0;
+  width: 316.61px;
+  height: 2.73px;
+}
+.treviFountain {
+  position: absolute;
+  top: 100.08px;
+  left: 17.29px;
+}
+.destinationBlockInner,
+.lineIcon {
+  position: absolute;
+  top: 14.83px;
+  left: 276.57px;
+  width: 21.24px;
+  height: 21.24px;
+}
+.lineIcon {
+  top: 14.82px;
+  left: 276.84px;
+  width: 21.23px;
+  height: 21.23px;
+}
+.pictureCoverFrom {
+  margin: 0;
+}
+.pictureCoverFromContainer {
+  position: absolute;
+  top: 29.11px;
+  left: 44.58px;
+  color: var(--color-silver);
+}
+.destinationBlock {
+  position: absolute;
+  top: 493.02px;
+  left: 206px;
+  width: 316.61px;
+  height: 134.65px;
+  font-size: 21.83px;
+}
+.destinationBlock1,
+.destinationBlock2 {
+  position: absolute;
+  top: 0;
+  left: 342.99px;
+  width: 316.61px;
+  height: 134.65px;
+}
+.destinationBlock1 {
+  top: 493.02px;
+  left: 554.45px;
+  width: 659.59px;
+  font-size: 21.83px;
+}
+.rectangleButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-tomato);
+  position: absolute;
+  top: 971px;
+  left: 599px;
+  border-radius: 109.07px;
+  width: 385px;
+  height: 76px;
+}
+.generateMyItinerary {
+  position: absolute;
+  top: 991.85px;
+  left: 646.55px;
+  font-size: 27.7px;
+  color: var(--color-white);
+  text-align: center;
+}
+.introFormChild1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-lightseagreen);
+  position: absolute;
+  top: 975px;
+  left: 215px;
+  border-radius: 101.45px;
+  width: 358.1px;
+  height: 76px;
+}
+.clearForm {
+  position: absolute;
+  top: 996.9px;
+  left: 330.69px;
+  font-size: 25.76px;
+  color: var(--color-white);
+  text-align: center;
+}
+.introForm {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 32.75px;
+  color: var(--color-black);
+  font-family: var(--font-inder);
+}
