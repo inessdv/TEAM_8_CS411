@@ -3,7 +3,7 @@ import styles from "./Map1.module.css";
 const Map1 = () => {
   return (
     <div className={styles.map}>
-      <a className={styles.travelbuddy}>
+      <a className={styles.travelbuddy} href="/">
         <span>Travel</span>
         <span className={styles.buddy}>Buddy</span>
       </a>

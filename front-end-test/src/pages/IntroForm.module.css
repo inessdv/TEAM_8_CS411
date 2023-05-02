@@ -27,6 +27,7 @@
   position: absolute;
   box-sizing: border-box;
 }
+
 .introFormItem {
   top: 124px;
   left: -1px;
@@ -42,6 +43,7 @@
   border-radius: 45.49px;
   width: 1169.98px;
   height: 66.41px;
+  text-indent: 65px;
 }
 .searchIcon {
   position: absolute;
@@ -82,11 +84,35 @@
   top: 352px;
   font-size: 36.39px;
 }
+
+.searchBar1,
+.searchBar2 {
+  text-indent: 35px;
+}
 .searchBar1,
 .startLocation,
 .whatDoYou {
   position: absolute;
   left: 215.1px;
+}
+
+.searchBar1::placeholder,
+.searchBar2::placeholder,
+.searchBar::placeholder {
+  top: 667.7px;
+  font-size: 36.39px;
+  display: inline-block;
+  width: 1301.9px;
+  height: 85.52px;
+  line-height: 50px;
+  left: 261.5px;
+  color: var(--color-gainsboro);
+  font-family: var(--font-montserrat);
+  text-indent: 30px;
+}
+
+.searchBar::placeholder{
+  text-indent: 65px;
 }
 .startLocation {
   top: 667.7px;

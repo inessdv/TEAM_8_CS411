@@ -1,30 +1,33 @@
 import styles from "./IntroForm.module.css";
+
+
 const IntroForm = () => {
   return (
     <div className={styles.introForm}>
-      <div className={styles.travelbuddy}>
+      <a href="/">
+        <div className={styles.travelbuddy} >
         <span>Travel</span>
         <span className={styles.buddy}>Buddy</span>
-      </div>
+      </div> 
+      </a>
       <img className={styles.locationIcon} alt="" src="/location-icon.svg" />
       <img className={styles.introFormChild} alt="" src="/rectangle-6.svg" />
       <div className={styles.introFormItem} />
-      <input className={styles.searchBar} type="text" />
+      <input className={styles.searchBar} type="text" placeholder="Search top attractions"/>
       <img className={styles.searchIcon} alt="" src="/search-icon.svg" />
-      <div className={styles.searchTopAttractions}>Search top attractions</div>
       <div className={styles.enterTripDetails}>Enter trip details for Rome</div>
-      <img
+      <a href= "/profile">
+        <img
         className={styles.iconProfileCircle}
-        alt=""
+        alt="Profile"
         src="/-icon-profile-circle.svg"
-      />
+        
+      /> </a>
       <div className={styles.whatDoYou}>What do you want to see?</div>
       <div className={styles.startLocation}>Start Location</div>
-      <input className={styles.searchBar1} type="text" />
-      <div className={styles.enterAnAddress}>Enter an address</div>
+      <input className={styles.searchBar1} type="text" placeholder= "Enter an address"/>
       <div className={styles.endLocation}>End Location</div>
-      <input className={styles.searchBar2} type="text" />
-      <div className={styles.enterAnAddress1}>Enter an address</div>
+      <input className={styles.searchBar2} type="text" placeholder= "Enter an address"/>
       <div className={styles.introFormInner} />
       <div className={styles.startAndEnd}>
         Start and end locations are the same
