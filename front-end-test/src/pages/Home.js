@@ -46,11 +46,14 @@ const Home = () => {
           <div className={styles.div}>?</div>
         </div>
       </button>
-      <input
-        className={styles.searchBarTotal}
-        type="text"
-        placeholder="Rome, Italy"
-      />
+      <div>
+        <input
+          className={styles.searchBarTotal}
+          type="text"
+          placeholder="Rome, Italy"
+        />
+        
+      </div>
     </div>
   );
 };
