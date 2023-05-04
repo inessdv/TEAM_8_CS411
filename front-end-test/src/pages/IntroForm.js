@@ -1,7 +1,26 @@
 import styles from "./IntroForm.module.css";
+import React, { useState } from 'react';
 
 
 const IntroForm = () => {
+
+  const [showDiv, setShowDiv] = useState(true);
+  const [showDiv1, setShowDiv1] = useState(true);
+
+
+  const handleCloseDiv = () => {
+    console.log("close div")
+    setShowDiv(false);
+    
+  };
+
+  const handleCloseDiv1 = () => {
+    console.log("close div")
+    setShowDiv1(false);
+    
+  };
+  
+
   return (
     <div className={styles.introForm}>
       <a href="/">
@@ -32,7 +51,7 @@ const IntroForm = () => {
       <div className={styles.startAndEnd}>
         Start and end locations are the same
       </div>
-      <div className={styles.destinationBlock}>
+      {showDiv1 && <div className={styles.destinationBlock}>
         <div className={styles.destinationBlockChild} />
         <img className={styles.destinationBlockItem} alt="" src="/line-3.svg" />
         <div className={styles.treviFountain}>Trevi Fountain</div>
@@ -41,14 +60,14 @@ const IntroForm = () => {
           alt=""
           src="/line-4.svg"
         />
-        <img className={styles.lineIcon} alt="" src="/line-5.svg" />
+        <img className={styles.lineIcon} alt="" src="/line-5.svg" onClick={handleCloseDiv1}/>
         <div className={styles.pictureCoverFromContainer}>
           <p className={styles.pictureCoverFrom}>{`picture cover from `}</p>
           <p className={styles.pictureCoverFrom}>google maps</p>
         </div>
-      </div>
+      </div> }
       <div className={styles.destinationBlock1}>
-        <div className={styles.destinationBlockChild} />
+      {showDiv && <div> <div className={styles.destinationBlockChild} />
         <img
           className={styles.destinationBlockItem}
           alt=""
@@ -60,31 +79,13 @@ const IntroForm = () => {
           alt=""
           src="/line-41.svg"
         />
-        <img className={styles.lineIcon} alt="" src="/line-51.svg" />
+        <img className={styles.lineIcon} alt="" src="/line-51.svg" onClick={handleCloseDiv}/>
         <div className={styles.pictureCoverFromContainer}>
           <p className={styles.pictureCoverFrom}>{`picture cover from `}</p>
           <p className={styles.pictureCoverFrom}>google maps</p>
         </div>
-        <div className={styles.destinationBlock2}>
-          <div className={styles.destinationBlockChild} />
-          <img
-            className={styles.destinationBlockItem}
-            alt=""
-            src="/line-32.svg"
-          />
-          <div className={styles.treviFountain}>Roman Forum</div>
-          <img
-            className={styles.destinationBlockInner}
-            alt=""
-            src="/line-42.svg"
-          />
-          <img className={styles.lineIcon} alt="" src="/line-52.svg" />
-          <div className={styles.pictureCoverFromContainer}>
-            <p className={styles.pictureCoverFrom}>{`picture cover from `}</p>
-            <p className={styles.pictureCoverFrom}>google maps</p>
-          </div>
-        </div>
-      </div>
+        </div>}
+      </div> 
       <button className={styles.rectangleButton} />
       <div
         className={styles.generateMyItinerary}

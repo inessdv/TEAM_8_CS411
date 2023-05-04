@@ -3,7 +3,7 @@ import styles from "./Map1.module.css";
 const Map1 = () => {
   return (
     <div className={styles.map}>
-      <a className={styles.travelbuddy} href="/">
+      <a className={styles.travelbuddy}>
         <span>Travel</span>
         <span className={styles.buddy}>Buddy</span>
       </a>
@@ -22,7 +22,6 @@ const Map1 = () => {
         />
       </Link>
       <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
-      <img className={styles.image2Icon} alt="" src="/image-2@2x.png" />
       <div className={styles.yourJourney}>Your Journey</div>
       <div className={styles.mapItem} />
       <button className={styles.start}>Start</button>
@@ -33,6 +32,16 @@ const Map1 = () => {
         <img className={styles.lineIcon} alt="" src="/line-7.svg" />
         <img className={styles.arrowIcon} alt="" src="/arrow-3.svg" />
       </button>
+      <div className={styles.travelBox}>
+        <div className={styles.travelBoxChild} />
+        <input className={styles.travelBoxItem} type="text" />
+        <input className={styles.travelBoxInner} type="text" />
+        <img className={styles.travelBoxChild1} alt="" src="/ellipse-7.svg" />
+        <img className={styles.travelBoxChild2} alt="" src="/ellipse-9.svg" />
+        <img className={styles.travelBoxChild3} alt="" src="/ellipse-9.svg" />
+        <img className={styles.travelBoxChild4} alt="" src="/ellipse-9.svg" />
+        <img className={styles.travelBoxChild5} alt="" src="/ellipse-8.svg" />
+      </div>
     </div>
   );
 };
