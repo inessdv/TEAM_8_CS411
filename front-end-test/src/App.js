@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 
-=======
 import { useState, useEffect } from "react";
->>>>>>> e84f4b4 (changes)
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -13,14 +10,6 @@ import Home from "./pages/Home";
 import IntroForm from "./pages/IntroForm";
 import Map from "./pages/Map1";
 import Profile from "./pages/Profile";
-
-
-<<<<<<< HEAD
-function App() {
-
-  return (
-=======
-
 
 function App() {
   /*
@@ -39,7 +28,7 @@ useEffect(() => {
     <div className="App">
       <h1>{message}</h1>
     </div>
->>>>>>> e84f4b4 (changes)
+
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -49,10 +38,7 @@ useEffect(() => {
         {/* other routes go here */}
       </Routes>
     </Router>
-<<<<<<< HEAD
-=======
     </>
->>>>>>> e84f4b4 (changes)
   );
 }
 
