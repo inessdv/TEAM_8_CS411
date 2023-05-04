@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 /*MOPNGODB CONNECTING*/
-
+/*
 const mongoose = require('mongoose');
 const url = 'mongodb://localhost:27017/mydatabase';
 
@@ -18,11 +18,11 @@ mongoose.connect(url, {
   maxMessageSizeBytes: 100000000 // 100 MB
   /*
   useCreateIndex: true,
-  useFindAndModify: false */
+/*
 })
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.log('MongoDB connection error:', err));
-
+*/
 
 app.get('/message', (req, res) => {
     res.json({ message: "Hello from server!" });
