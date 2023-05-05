@@ -46,7 +46,7 @@ const Home = () => {
       <button className={styles.signInButton} >
         <div className={styles.signInButtonChild} />
 
-        <div className={styles.signUp}>Sign up
+        <div className={styles.signUp}>
           <GoogleLogin
           clientId="44906587167-mq3o0850m82thd3k1l7p89h56sca7rv0.apps.googleusercontent.com"
           buttonText="Login"
