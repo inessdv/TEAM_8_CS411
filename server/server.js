@@ -1,36 +1,51 @@
-const express = require('express');
-const cors = require('cors');
-
-const app = express();
-
+const express = require("express");
+const PORT = process.env.PORT||27107;
+{/*const cors = require('cors'); 
 app.use(cors());
+*/}
+const app = express();
 app.use(express.json());
 
+{/* 
+const apiKey = '15aeee8ccbc94a419df212006230405';
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=New%20York`;
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow',
+  mode: 'no-cors'
+};
 
-/*MOPNGODB CONNECTING*/
-/*
-const mongoose = require('mongoose');
-const url = 'mongodb://localhost:27017/mydatabase';
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {const temperature = data.current.temp_f;
+    const temperatureDisplay = document.getElementById("temperature-display");
+    temperatureDisplay.innerText = `${temperature}°F`;
+    fetch("https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name%2Crating%2Cformatted_phone_number&key=AIzaSyCeAOHvjScLJ497zKk3GYLwOMmX_a0uQOY", requestOptions)
+.then(response => response.text())
+.then(result => console.log("api call success " + result))
+.catch(error => console.log('error', error));
+  
+  })
+  .catch(error => console.error(error));
 
-mongoose.connect(url, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  maxMessageSizeBytes: 100000000 // 100 MB
-  /*
-  useCreateIndex: true,
-/*
-})
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.log('MongoDB connection error:', err));
-*/
+*/}
+
 
 app.get('/message', (req, res) => {
     res.json({ message: "Hello from server!" });
 });
 
+app.get('/weather', (req, res) => {
+    res.json({weather: "Its rainy today"})
+});
 
-app.listen(27017, () => {
-    console.log(`Server is running on port 27017.`);
+app.get('/place', (req, res) => {
+  res.json({place: "You are in boston"})
+});
+
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}.`);
   });
 
   
