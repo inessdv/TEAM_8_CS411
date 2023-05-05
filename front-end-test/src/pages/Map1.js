@@ -21,6 +21,7 @@ const Map1 = () => {
           src="/-icon-profile-circle.svg"
         />
       </Link>
+      <div id='temperature-display'></div>
       <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
       <div className={styles.yourJourney}>Your Journey</div>
       <div className={styles.mapItem} />
