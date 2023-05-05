@@ -9,4 +9,4 @@ Database: MongoDB
 Front-end-test is the folder for react.js
 Server is for express.js
 
-Google sign in as OAuth
+Google sign in as OAuth in top right corner
