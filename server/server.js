@@ -1,12 +1,12 @@
 const express = require("express");
 const PORT = process.env.PORT||27107;
-{/*const cors = require('cors'); 
+
+const cors = require('cors'); 
 app.use(cors());
-*/}
+
 const app = express();
 app.use(express.json());
 
-{/* 
 const apiKey = '15aeee8ccbc94a419df212006230405';
 const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=New%20York`;
 var requestOptions = {
@@ -27,17 +27,14 @@ fetch(apiUrl)
   
   })
   .catch(error => console.error(error));
-
-*/}
-
-
+  
 app.get('/message', (req, res) => {
     res.json({ message: "Hello from server!" });
-});
+})
 
 app.get('/weather', (req, res) => {
     res.json({weather: "Its rainy today"})
-});
+})
 
 app.get('/place', (req, res) => {
   res.json({place: "You are in boston"})
@@ -47,5 +44,3 @@ app.get('/place', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
   });
-
-  
