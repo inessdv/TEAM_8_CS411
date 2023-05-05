@@ -28,7 +28,7 @@ function App() {
       temperatureDisplay.innerText = `${temperature}°F`;
       fetch("https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name%2Crating%2Cformatted_phone_number&key=AIzaSyCeAOHvjScLJ497zKk3GYLwOMmX_a0uQOY", requestOptions)
   .then(response => response.text())
-  .then(result => console.log(result))
+  .then(result => console.log("api call success " + result))
   .catch(error => console.log('error', error));
     
     })
