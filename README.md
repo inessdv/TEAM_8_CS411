@@ -5,7 +5,8 @@ Front end: React.js
 
 Database: MongoDB
 
-they are connected and working!
 
-Client is the folder for react.js
+Front-end-test is the folder for react.js
 Server is for express.js
+
+Google sign in as OAuth
