@@ -2,9 +2,8 @@ const express = require("express");
 const PORT = process.env.PORT||27107;
 
 const cors = require('cors'); 
-app.use(cors());
-
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const apiKey = '15aeee8ccbc94a419df212006230405';
