@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import styles from "./Home.module.css";
 import '../global.css';
+import GoogleLogin from 'react-google-login';
+
 // line 49 is the input field where the api call should be made
 const Home = () => {
   useEffect(() => {
@@ -23,6 +25,14 @@ const Home = () => {
     
   }, []);
 
+  const responseSuccessGoogle = (response) => {
+    console.log(response);
+  }
+  
+  const responseErrorGoogle = (response) => {
+  
+  }
+
   return (
     <div className={styles.home}>
       <div className={styles.homeChild} />
@@ -35,7 +45,16 @@ const Home = () => {
       </div>
       <button className={styles.signInButton} >
         <div className={styles.signInButtonChild} />
-        <div className={styles.signUp}>Sign up</div>
+
+        <div className={styles.signUp}>Sign up
+          <GoogleLogin
+          clientId="44906587167-mq3o0850m82thd3k1l7p89h56sca7rv0.apps.googleusercontent.com"
+          buttonText="Login"
+          onSuccess={responseSuccessGoogle}
+          onFailure={responseErrorGoogle}
+          cookiePolicy={'single_host_origin'}
+        />,
+        </div>
       </button>
       <div className={styles.anAutomaticTravel}>
         An automatic travel itinerary generator
