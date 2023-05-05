@@ -16,41 +16,33 @@ function App() {
 connecting to back end
 */
 const [message, setMessage] = useState("");
+const [weather, SetWeather] = useState("");
+const [place, SetPlace] = useState("");
 
 useEffect(() => {
-  fetch("http://localhost:27017/message")
+  fetch("http://localhost:27107/message")
     .then((res) => res.json())
     .then((data) => setMessage(data.message));
 }, []);
 
-  const apiKey = '15aeee8ccbc94a419df212006230405';
-  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=New%20York`;
-  var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-    mode: 'no-cors'
-  };
-  
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {const temperature = data.current.temp_f;
-      const temperatureDisplay = document.getElementById("temperature-display");
-      temperatureDisplay.innerText = `${temperature}°F`;
-      fetch("https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name%2Crating%2Cformatted_phone_number&key=AIzaSyCeAOHvjScLJ497zKk3GYLwOMmX_a0uQOY", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log("api call success " + result))
-  .catch(error => console.log('error', error));
-    
-    })
-    .catch(error => console.error(error));
-    
-  
+useEffect(() => {
+  fetch('http://localhost:27107/weather')
+  .then((res) => res.json())
+  .then((data) => SetWeather(data.weather));
+}), [];
 
+useEffect(() => {
+  fetch("http://localhost:27107/place")
+  .then((res) => res.json())
+  .then((data) => SetPlace(data.place));
+}), [];
 
   return (
     <>
     <div className="App">
       <h1>{message}</h1>
+      <h1>{weather}</h1>
+      <h1>{place}</h1>
     </div>
     <Router>
       <Routes>
